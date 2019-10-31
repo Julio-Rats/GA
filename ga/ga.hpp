@@ -13,8 +13,8 @@
 #define     TIME_SIMULATION       120000
 
 #define     SCALAR_WCRT           1000
-#define     SCALAR_TIME_BURST     100
-#define     SCALAR_FRAMES_BURST   10
+#define     SCALAR_TIME_BURST     0
+#define     SCALAR_FRAMES_BURST   0
 
 
 class Solution
@@ -29,9 +29,10 @@ class Solution
 };
 
 std::vector<Solution>   ga_sol_population;
-unsigned int            ga_number_generation;
-unsigned int            ga_length_population;
-unsigned int            length_frames;
+u_int16_t               ga_number_generation;
+u_int16_t               ga_length_population;
+u_int16_t               length_frames;
+double                  ga_difference_pop;
 double                  ga_prob_mution;
 
 Simulator_CAN*          simulator;
